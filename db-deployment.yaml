@@ -30,7 +30,7 @@ spec:
           - mountPath: /var/lib/mysql
             name: app-db-data
         args:
-          - "ignore-db-directory=lost+found"
+          - "--ignore-db-dir=lost+found"
       nodeSelector:
         zone: us-east-1a
       volumes:
