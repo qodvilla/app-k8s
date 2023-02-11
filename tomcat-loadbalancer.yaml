@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: entrance-LB
+spec:
+  selector:
+    app: vproapp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: app-port
+  type: LoadBalancer
