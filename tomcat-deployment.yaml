@@ -13,8 +13,8 @@ spec:
     metadata:
       labels:
         app: vproapp
-    spec:
-      containers:
+    podSpec:
+      pod:
       - name: vproapp
         image: vprofile/vprofileapp:V1
         ports:
